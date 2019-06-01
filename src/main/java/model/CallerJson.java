@@ -1,0 +1,41 @@
+package model;
+
+import com.fasterxml.jackson.annotation.JsonValue;
+
+import java.util.Set;
+
+public class CallerJson {
+
+    @JsonValue
+    String callerName;
+
+    @JsonValue
+    Set<EntityTypeJson> entityTypes;
+
+    @JsonValue
+    String callerAddress;
+
+    public String getCallerName() {
+        return callerName;
+    }
+
+    public void setCallerName(String callerName) {
+        this.callerName = callerName;
+    }
+
+    public Set<EntityTypeJson> getEntityTypes() {
+        return entityTypes;
+    }
+
+    public void setEntityTypes(Set<EntityTypeJson> entityTypes) {
+        this.entityTypes = entityTypes;
+    }
+
+    public String getCallerAddress() {
+        return callerAddress;
+    }
+
+    public void setCallerAddress(String callerAddress) {
+        this.callerAddress = callerAddress;
+    }
+}
