@@ -1,12 +1,13 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public class EntityTypeJson {
 
-    @JsonValue
+    @JsonProperty
     private long id;
-    @JsonValue
+    @JsonProperty
     private String unit;
 
     public EntityTypeJson(String unit){

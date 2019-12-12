@@ -1,5 +1,6 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 import java.util.Date;
@@ -9,16 +10,16 @@ public class StatisticalEntityJson {
 
     public StatisticalEntityJson(){}
 
-    @JsonValue
+    @JsonProperty
     private String entityTypeName;
 
-    @JsonValue
+    @JsonProperty
     private Date timeStamp;
 
-    @JsonValue
+    @JsonProperty
     private int occurances;
 
-    @JsonValue
+    @JsonProperty
     private double value;
 
     public String getEntityType() {

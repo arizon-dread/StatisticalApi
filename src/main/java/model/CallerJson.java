@@ -1,18 +1,19 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 import java.util.Set;
 
 public class CallerJson {
 
-    @JsonValue
+    @JsonProperty
     String callerName;
 
-    @JsonValue
+    @JsonProperty
     Set<EntityTypeJson> entityTypes;
 
-    @JsonValue
+    @JsonProperty
     String callerAddress;
 
     public String getCallerName() {
